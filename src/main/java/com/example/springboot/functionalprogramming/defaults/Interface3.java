@@ -1,0 +1,14 @@
+package com.example.springboot.functionalprogramming.defaults;
+
+/**
+ * Created by z001qgd on 8/2/18.
+ */
+public interface Interface3 extends Interface1,Interface2 {
+
+    default void methodC(){
+        System.out.println("Inside method C "+ Interface3.class);
+    }
+    default void methodA(){
+        System.out.println("Inside method A "+ Interface3.class);
+    }
+}
